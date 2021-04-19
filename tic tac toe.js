@@ -25,9 +25,12 @@ function reply(id) {
            my2(2);
     }
     if(a==9){
-        document.querySelector('.main').textContent = "Tie! ,Game over ";
-        document.querySelector('.main1').textContent = "Restart to play the next game"; 
-    e =1;
+        my2(1);
+        if(e!=1){
+            document.querySelector('.main').textContent = "Tie! ,Game over ";
+            document.querySelector('.main1').textContent = "Restart to play the next game"; 
+            e =1;
+        }
    }
     }
     else{
