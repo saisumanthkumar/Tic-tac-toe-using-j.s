@@ -14,7 +14,7 @@ function reply(id) {
         document.querySelector('.main1').textContent = " ";
         d[id-1] = "o";
         a++;
-        my2(a%2);
+        my2(1);
     } 
     else {
            document.getElementById(id).innerHTML = 'x';
@@ -22,7 +22,7 @@ function reply(id) {
            document.querySelector('.main1').textContent = " ";
            d[id-1] = "x";
            a++;
-           my2(a%2);
+           my2(2);
     }
     if(a==9){
         document.querySelector('.main').textContent = "Tie! ,Game over ";
@@ -65,7 +65,7 @@ function my2(q){
     }
     if(e==1){
         var s= "Player "
-        s = s+(q+1)+" has won";
+        s = s+q+" has won";
         document.querySelector('.main').textContent = s;
         document.querySelector('.main1').textContent = "Restart to play the next game"; 
     
