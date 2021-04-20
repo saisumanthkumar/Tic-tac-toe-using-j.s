@@ -1,6 +1,7 @@
 body{
     background-color: rgb(7, 7, 7);
     max-height: 100%;
+    overflow-x: hidden;
 }
 h1{
     color: aqua;
@@ -38,4 +39,25 @@ h1{
     font-size: 30px;
     position: absolute;
     left: 3%;
+}
+
+@media (max-width: 1300px) {
+    .body {
+        margin-top: 0px;
+    }
+    .main,
+    .main1 {
+        position: relative;
+        text-align: center;
+    }
+    .main {
+        top: -40px;
+    }
+    .main1 {
+        top: -70px;
+    }
+    .but {
+        position: relative;
+        top: -60px;
+    }
 }
